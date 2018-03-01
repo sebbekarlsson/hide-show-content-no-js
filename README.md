@@ -1,8 +1,8 @@
 # hide and show content without javascript
 
-> screenshot:
+> usage:
 
-![nojs.png](nojs.png)
+![hidecontent.gif](hidecontent.gif)
 
 
 > code:
