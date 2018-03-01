@@ -1,0 +1,99 @@
+.details-wrap {
+    width: 300px;
+}
+
+details summary::-webkit-details-marker {
+    display:none;
+}
+
+details {
+    margin-bottom: 1rem;
+    border-bottom-style: solid;
+    border-bottom-color: lightgray;
+    border-bottom-width: 1px;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+details summary, .btn {
+    height: 42px;
+    line-height: 42px;
+    background-color: #3498db;
+    color: white;
+    display: inline-block;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: Sans-Serif;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 100%;
+}
+
+details summary:hover, .btn:hover {
+    background-color: #2980b9;
+}
+
+details[open]::after {
+    box-sizing: border-box;
+    padding-top: 0.5rem;
+}
+
+details[open] summary {
+    content: 'Close';
+    background-color: transparent;
+    color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    transition: .2s;
+    font-weight: 600;
+    width: 100%;
+    padding-right: 0px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    padding-left: 0px;
+}
+
+details[open] summary::after {
+    content: '(click to close)';
+    display: inline-block;
+    text-transform: lowercase;
+    box-sizing: border-box;
+    float: right;
+    font-weight: 200;
+}
+
+details .btn {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+details textarea {
+    width: 100%;
+    height: 300px;
+    margin-top: 0.5rem;
+    font-family: Sans-Serif;
+    font-size: 100%;
+    box-sizing: border-box;
+    padding: 0.3rem;
+}
+
+details input[type='file'] {
+    margin-top: 0.5rem;
+}
+
+.input-text {
+    background: none;
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #3498db;
+    font-size: 100%;
+    font-family: Sans-Serif;
+}
